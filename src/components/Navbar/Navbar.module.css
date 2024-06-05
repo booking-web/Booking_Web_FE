@@ -1,0 +1,58 @@
+.containerParent {
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  z-index: 100;
+}
+
+.containerChildren {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 100px;
+  padding: 10px 20px;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+}
+
+.leftButton {
+  background-color: #1DCBB6;
+}
+
+.rightButton {
+  background-color: #2320D4;
+}
+
+.translates {
+  display: flex;
+  gap: 10px;
+}
+
+.translate {
+  display: flex;
+  object-fit: contain;
+  height: 1em;
+  gap: 4px;
+  padding: 5px 10px;
+  border-radius: 100px;
+
+  &:hover {
+    background-color: red;
+    cursor: pointer;
+  }
+}

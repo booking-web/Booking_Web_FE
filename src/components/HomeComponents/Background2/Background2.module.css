@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.item {
+  width: 312px;
+  height: auto;
+  border-radius: 20px;
+  display: flex;
+}
+
+.img {
+  width: 312px;
+  display: flex;
+}
+
+.title {
+  display: flex;
+  position: absolute;
+  font-size: 30px;
+  padding: 30px 75px 0 30px;
+  width: 312px;
+  box-sizing: border-box;
+}

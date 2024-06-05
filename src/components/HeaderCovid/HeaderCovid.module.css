@@ -1,0 +1,64 @@
+.container {
+  padding: 25px 0;
+  background-color: #111c63;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.title {
+  font-size: 26px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: white !important;
+  z-index: 10;
+}
+
+.btn {
+  padding: 10px 30px;
+  border-radius: 100px;
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+.red1 {
+  display: flex;
+  width: 68px;
+  position: absolute;
+  left: 21rem;
+  top: -20px;
+}
+
+.red2 {
+  display: flex;
+  width: 104px;
+  position: absolute;
+  right: 10rem;
+  top: 20px;
+}
+
+.blue1 {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  margin-left: 12rem;
+  top: 30px;
+  width: 105px;
+}
+
+.blue2 {
+  display: flex;
+  position: absolute;
+  right: 10px;
+  height: 170px;
+  top: -97px;
+}

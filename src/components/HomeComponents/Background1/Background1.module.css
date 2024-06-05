@@ -1,0 +1,181 @@
+/* index */
+
+.contents {
+  max-width: 1100px;
+  padding: 0 calc((100% - 1100px)/ 2);
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  position: relative;
+
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 42px;
+}
+
+.swapContent {
+  display: flex;
+  position: relative;
+}
+
+
+/* Saigon */
+
+.SGContainer {
+  display: flex;
+  width: 100%;
+}
+
+.items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.item {
+  background-color: white;
+  height: auto;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 330px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.image {
+  height: calc(380px / 2);
+  background-size: cover;
+  background-position: center center;
+  border-radius: 20px;
+}
+
+#item1 {
+  background-image: url("../../../images/backgrounds/background1/building1.jpg");
+
+}
+
+#item2 {
+  background-image: url("../../../images/backgrounds/background1/building2.jpg");
+}
+
+#item3 {
+  background-image: url("../../../images/backgrounds/background1/building3.jpg");
+}
+
+.infos {
+  padding: 0 0px 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info1 {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.info2 {
+  display: flex;
+  align-items: flex-start;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.items2 {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+.nextBooking {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #e8f1ff;
+  width: fit-content;
+  border-radius: 100px;
+  font-size: 12px;
+}
+
+.btns {
+  margin-top: 15px;
+  display: flex;
+  gap: 20px;
+}
+
+.btn1 {
+  background-color: blue;
+}
+
+.btn2 {
+  background-color: #1DCBB6;
+}
+
+/*Ha Noi*/
+
+.itemHN {
+  display: flex;
+  width: 1100px;
+  padding: 0 calc((100% - 1100px)/ 2);
+  background-color: white;
+  height: 200px;
+  border-radius: 30px;
+  position: relative;
+  padding: 20px;
+  height: 436px;
+}
+
+.imageHN {
+  background-image: url("../../../images/backgrounds/background1/building4.jpg");
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  border-radius: 30px;
+  background-position: center center;
+  flex: 1;
+}
+
+.infoHN {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.titleHN {
+  font-size: 36px;
+  background: linear-gradient(90deg, #2320d4 24.57%, #38d6ec 96.37%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-left: 40px;
+}
+
+.HN {
+  margin-top: 10px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
