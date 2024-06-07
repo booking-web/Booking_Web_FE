@@ -1,0 +1,47 @@
+.container {
+  position: relative;
+  height: 51vw;
+  overflow: hidden;
+}
+
+.left {
+  display: flex;
+  height: 100%;
+  position: relative;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.separator {
+  width: 70px;
+  height: 8px;
+  margin-top: 30px;
+  border-radius: 10px;
+  background-color: #2320D4
+}
+
+.text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+
+.right {
+  position: absolute;
+  top: 0;
+  right: -20px;
+}
+
+.image {
+  width: 67vw;
+}
+
+.video {
+  width: calc(65vw - 3px);
+  height: calc(65vw / 1500* 1080);
+}

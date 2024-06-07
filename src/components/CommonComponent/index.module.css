@@ -1,0 +1,63 @@
+/*Background1*/
+
+.image {
+  background-image: url("../../images/backgrounds/background1/bg1.svg");
+  margin-top: -100px;
+  padding-top: 180px;
+  margin-bottom: 70px;
+  padding-bottom: 120px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center bottom;
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1095px;
+    background-image: url("../../images/backgrounds/background1/bg2.svg");
+    background-position: left bottom;
+    background-size: auto 94%;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+}
+
+.img {
+  position: absolute;
+  right: calc((100% - 1200px) / 2 + 14px);
+  width: 177px;
+  height: 177px;
+  bottom: -70px;
+}
+
+
+/*Title*/
+
+.title {
+  font-family: AvenirNext-DemiBold, sans-serif !important;
+  font-size: 40px;
+  line-height: 30px;
+  white-space: pre-wrap;
+}
+
+/*Green button*/
+.greenBtn {
+  background-color: #1DCBB6;
+  border-radius: 100px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+}
+
+.blueBtn {
+  background-color: #007bff;
+  border-radius: 100px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+}
