@@ -3,6 +3,8 @@ import Navbar from './components/Navbar/Navbar.tsx'
 import SlickSlider from "./components/SlickSlider/SlickSlider.tsx"
 import Child_BG1 from './components/HomeComponents/Background1/Background1.tsx'
 import Background2 from "./components/HomeComponents/Background2/Background2.tsx"
+import Background3 from './components/HomeComponents/Background3/Background3.tsx'
+import Background4 from './components/HomeComponents/Background4/Background4.tsx'
 
 const mainRoutes = [
 
@@ -55,6 +57,8 @@ function App() {
       <SlickSlider />
       <Child_BG1 />
       <Background2 />
+      <Background3 />
+      <Background4 />
     </>
   )
 }
