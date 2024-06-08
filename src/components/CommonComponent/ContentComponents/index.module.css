@@ -1,0 +1,26 @@
+/*Title*/
+
+.title {
+  font-family: AvenirNext-DemiBold, sans-serif !important;
+  font-size: 40px;
+  line-height: 53px;
+  white-space: pre-wrap;
+}
+
+/*Separator*/
+
+.separator {
+  width: 70px;
+  height: 8px;
+  margin-top: 30px;
+  border-radius: 10px;
+  background-color: #2320D4
+}
+
+.text {
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  display: flex;
+}

@@ -10,7 +10,7 @@ const Background2 = () => {
     {
       image: img1,
       backgroundColor: '#daf5fb',
-      title: <Text id="home.visit" />
+      title: <Text id="bg4.title" />
     },
     {
       image: img2,

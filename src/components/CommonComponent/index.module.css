@@ -35,16 +35,6 @@
   bottom: -70px;
 }
 
-
-/*Title*/
-
-.title {
-  font-family: AvenirNext-DemiBold, sans-serif !important;
-  font-size: 40px;
-  line-height: 30px;
-  white-space: pre-wrap;
-}
-
 /*Green button*/
 .greenBtn {
   background-color: #1DCBB6;
@@ -53,6 +43,8 @@
   color: white;
   font-size: 16px;
 }
+
+/*Blue button*/
 
 .blueBtn {
   background-color: #007bff;

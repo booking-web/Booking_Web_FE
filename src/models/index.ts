@@ -9,3 +9,7 @@ export interface ITitle {
 export interface IButton {
   content: string
 }
+
+export interface IText {
+  text: string
+}

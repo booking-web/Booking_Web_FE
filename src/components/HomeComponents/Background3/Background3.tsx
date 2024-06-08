@@ -12,7 +12,7 @@ const Background3 = () => {
     <div className={styles.container}>
       <div className={styles.bg}></div>
       <div className={styles.content}>
-        <h4 className={styles.title}>{t("insurance.direct.billing")}</h4>
+        <h4 className={styles.title}>{t("bg3.title")}</h4>
         <p className={styles.text}>{t("bg3.text")}</p>
         <div className={styles.images}>
           {Object.entries(images).map(([_, module]: any, index) => (

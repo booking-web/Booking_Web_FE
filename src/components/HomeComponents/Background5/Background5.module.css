@@ -1,0 +1,45 @@
+.container {
+  position: relative;
+  height: 58vw;
+  margin-top: 0;
+}
+
+.videoCover {
+  position: absolute;
+  top: 14vw;
+  left: 0;
+}
+
+
+.video {
+  width: 55vw;
+  height: calc(55vw / 1750* 1080);
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+
+.content {
+  position: absolute;
+  width: 41vw;
+  top: 17vw;
+  right: 7vw;
+}
+
+.icons {
+  display: flex;
+  gap: 50px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
