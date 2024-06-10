@@ -1,0 +1,31 @@
+.container {
+  height: 50vw;
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  left: -20px;
+}
+
+.content {
+  position: absolute;
+  width: 40vw;
+  top: 6vw;
+  right: 2vw;
+}
+
+.icons {
+  display: flex;
+  gap: 50px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}

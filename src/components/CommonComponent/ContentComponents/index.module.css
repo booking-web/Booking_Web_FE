@@ -2,7 +2,7 @@
 
 .title {
   font-family: AvenirNext-DemiBold, sans-serif !important;
-  font-size: 40px;
+  font-size: 45px;
   line-height: 53px;
   white-space: pre-wrap;
 }
@@ -10,7 +10,7 @@
 /*Separator*/
 
 .separator {
-  width: 70px;
+  width: 100px;
   height: 8px;
   margin-top: 30px;
   border-radius: 10px;

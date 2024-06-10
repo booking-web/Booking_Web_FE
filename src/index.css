@@ -11,6 +11,6 @@ body {
   margin: 0;
   padding: 0;
   height: auto;
-  color: #111C63;
+  color: #111C63 !important;
   font-family: AvenirNext, sans-serif !important;
 }

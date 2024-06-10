@@ -1,0 +1,51 @@
+.container {
+  height: 44vw;
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+
+.media {
+  position: absolute;
+  top: 8vw;
+  left: 7vw;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  gap: 30px;
+}
+
+.item {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, .1);
+  transition: all .6s cubic-bezier(.165, .84, .44, 1);
+  height: 60px;
+  padding: 0 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.content {
+  width: 26vw;
+  right: 4vw;
+  position: absolute;
+  top: 5vw;
+}
