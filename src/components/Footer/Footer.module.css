@@ -1,0 +1,53 @@
+.container {
+  color: #cecece;
+  background: #242a61;
+  padding: 85px 0;
+  font-size: 14px;
+}
+
+.content {
+  max-width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#row {
+  margin-right: 20px;
+}
+
+.row {
+  margin-top: 30px;
+  display: flex;
+}
+
+.row1 {
+  flex: 3;
+  margin-right: 70px;
+}
+
+.row2 {
+  flex: 1;
+}
+
+.row3 {
+  flex: 1;
+}
+
+.row4 {
+  flex: 2;
+}
+
+.text {
+  margin: 10px 0;
+
+  &:hover {
+    color: rgb(0, 205, 0);
+    cursor: pointer;
+  }
+}
+
+strong {
+  color: white;
+}

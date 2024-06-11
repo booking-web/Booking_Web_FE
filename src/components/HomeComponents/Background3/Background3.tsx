@@ -16,7 +16,7 @@ const Background3 = () => {
         <p className={styles.text}>{t("bg3.text")}</p>
         <div className={styles.images}>
           {Object.entries(images).map(([_, module]: any, index) => (
-            <div className={styles.img}>
+            <div key={index} className={styles.img}>
               <img key={index} src={module.default} alt={`image-${index}`} className={styles.a} />
             </div>
           ))}

@@ -11,6 +11,7 @@ import Background7 from './components/HomeComponents/Background7/Background7.tsx
 import Background8 from './components/HomeComponents/Background8/Background8.tsx'
 import Background9 from './components/HomeComponents/Background9/Background9.tsx'
 import Background10 from './components/HomeComponents/Background10/Background10.tsx'
+import Footer from './components/Footer/Footer.tsx'
 
 const mainRoutes = [
 
@@ -71,6 +72,7 @@ function App() {
       <Background8 />
       <Background9 />
       <Background10 />
+      <Footer />
     </>
   )
 }
