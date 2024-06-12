@@ -1,9 +1,8 @@
-import React from 'react'
-import Modal from 'antd/es/modal/Modal'
+import sytles from "./index.module.css"
 
 const ModalCustom = () => {
   return (
-    <div>Modal</div>
+    <div className={sytles.modal}>abc</div>
   )
 }
 

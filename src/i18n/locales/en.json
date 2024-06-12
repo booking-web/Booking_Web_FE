@@ -70,5 +70,9 @@
   "license.title": "Business Registration Number",
   "license.content": "0309145924, first registered on 06/07/2009, ninth amended on 06/07/2023, issued by Department of Planning and Investment of Ho Chi Minh City.",
   "address": "Address",
-  "jio.smart.clinic": "Jio Smart Clinic"
+  "jio.smart.clinic": "Jio Smart Clinic",
+  "clinics": "Clinics",
+  "back": "Back",
+  "error.page": "This's page not found!",
+  "login.now": "Login Now !"
 }

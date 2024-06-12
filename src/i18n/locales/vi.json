@@ -70,5 +70,9 @@
   "license.title": "Giấy CN ĐKDN",
   "license.content": "số 0309145924, đăng ký lần đầu ngày 06/07/2009, đăng ký thay đổi lần thứ 9 ngày 06/07/2023, cấp bởi Sở KH&ĐT Thành phố Hồ Chí Minh.",
   "address": "Địa chỉ",
-  "jio.smart.clinic": "Phòng khám Đa khoa Cao cấp Jio Health - Jio Smart Clinic"
+  "jio.smart.clinic": "Phòng khám Đa khoa Cao cấp Jio Health - Jio Smart Clinic",
+  "clinics": "Chuyên khoa",
+  "back": "Quay lại",
+  "error.page": "Trang này không tồn tại !",
+  "login.now": "Đăng nhập ngay !"
 }

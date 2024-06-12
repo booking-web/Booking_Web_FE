@@ -1,0 +1,14 @@
+/*Login Page*/
+
+.icon {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  font-size: 30px;
+  z-index: 100;
+
+  &:hover {
+    color: red;
+    cursor: pointer;
+  }
+}
