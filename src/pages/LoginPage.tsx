@@ -4,6 +4,7 @@ import ModalCustom from "../components/CommonComponent/Modal"
 import styles from "./Pages.module.css"
 import { useNavigate } from "react-router-dom"
 
+
 const LoginPage = () => {
   const navigate = useNavigate()
   return (

@@ -57,7 +57,7 @@ const Navbar = () => {
         </div>
         <div className={styles.buttons}>
           <button className={styles.leftButton}>{t("make.an.appointment.now")}</button>
-          <Link to="/login">
+          <Link to="/login-page">
             <button className={styles.rightButton}>{t("login.now")}</button>
           </Link>
         </div>

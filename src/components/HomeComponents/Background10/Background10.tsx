@@ -35,7 +35,7 @@ const Background10 = () => {
               <img src={store2vi} />
             </div>
             :
-            <div className={styles.store}>
+            <div className={styles.stores}>
               <img src={store1en} />
               <img src={store2en} />
             </div>

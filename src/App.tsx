@@ -10,19 +10,9 @@ const mainRoutes = [
 
   //auth
   {
-    path: "/login",
+    path: "/login-page",
     element: <LoginPage />,
     key: "login",
-  },
-  {
-    path: "/sign-up",
-    // element: <SignIn />,
-    key: "sign-up",
-  },
-  {
-    path: "/change-password",
-    // element: <SignIn />,
-    key: "change-password",
   },
 
   // profile

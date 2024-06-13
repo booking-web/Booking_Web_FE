@@ -57,9 +57,27 @@
 /*Modal*/
 
 .modal {
-  width: 300px;
-  height: 300px;
+  max-width: 600px;
+  max-height: auto;
   border-radius: 30px;
   background-color: white;
   margin: auto auto;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.action {
+  &:hover {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+  }
 }

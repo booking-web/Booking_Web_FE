@@ -74,5 +74,14 @@
   "clinics": "Clinics",
   "back": "Back",
   "error.page": "This's page not found!",
-  "login.now": "Login Now !"
+  "login.now": "Login Now !",
+  "login": "Login",
+  "register": "Register",
+  "forgot.password": "Forgot Password",
+  "first.name": "First Name",
+  "last.name": "Last Name",
+  "phone.number": "Phone number",
+  "password": "Password",
+  "required.mess": "This input is required !",
+  "confirm.password": "Confirm Password"
 }

@@ -74,5 +74,14 @@
   "clinics": "Chuyên khoa",
   "back": "Quay lại",
   "error.page": "Trang này không tồn tại !",
-  "login.now": "Đăng nhập ngay !"
+  "login.now": "Đăng nhập ngay !",
+  "login": "Đăng nhập",
+  "register": "Đăng ký",
+  "forgot.password": "Quên mật khẩu",
+  "first.name": "Tên",
+  "last.name": "Họ",
+  "phone.number": "SĐT",
+  "password": "Mật khẩu",
+  "required.mess": "Phần này không được để trống !",
+  "confirm.password": "Xác nhận mật khẩu"
 }
