@@ -83,5 +83,8 @@
   "phone.number": "Phone number",
   "password": "Password",
   "required.mess": "This input is required !",
-  "confirm.password": "Confirm Password"
+  "confirm.password": "Confirm Password",
+  "sendOTP": "Send OTP",
+  "enter.OTP": "Enter OTP",
+  "something.went.wrong": "something went wrong. Please try again !"
 }

@@ -83,5 +83,8 @@
   "phone.number": "SĐT",
   "password": "Mật khẩu",
   "required.mess": "Phần này không được để trống !",
-  "confirm.password": "Xác nhận mật khẩu"
+  "confirm.password": "Xác nhận mật khẩu",
+  "sendOTP": "Gửi mã OTP",
+  "enter.OTP": "Nhập Mã OTP",
+  "something.went.wrong": "Đã xảy ra lỗi. Vui lòng thử lại !"
 }
