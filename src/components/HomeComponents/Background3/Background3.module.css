@@ -6,10 +6,6 @@
 
 .bg {
   background-image: url("../../../images/backgrounds/background3/bg.svg");
-  /* position: absolute;
-  width: 100%;
-  background-size: cover;
-  height: 1116px; */
   position: absolute;
   top: 0;
   left: 0;

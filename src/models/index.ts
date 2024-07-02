@@ -13,3 +13,8 @@ export interface IButton {
 export interface IText {
   text: string
 }
+
+export interface ISearch {
+  placeholder: string,
+  className: any
+}

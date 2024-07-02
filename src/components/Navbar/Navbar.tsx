@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import vi from "../../images/navbar_images/vi.png";
 import en from "../../images/navbar_images/en.png";
 import { useLanguage } from "../../contexts/LanguagesContext";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
@@ -21,6 +21,7 @@ const Navbar = () => {
       }
     };
 
+
     window.addEventListener('scroll', handleScroll);
 
     return () => {
@@ -34,11 +35,11 @@ const Navbar = () => {
         <img src={logo_header} alt='' />
       </Link>
       <div className={styles.containerChildren}>
-        <Link className={styles.a} to='/'>{t("home")}</Link>
-        <Link className={styles.a} to=''>{t("care.service")}</Link>
-        <Link className={styles.a} to='https://pharmacy.jiohealth.com/'>{t("jio.pharmacy")}</Link>
-        <Link className={styles.a} to='/clinics'>{t("clinics")}</Link>
-        <Link className={styles.a} to='/doctors'>{t("doctors")}</Link>
+        <Link className={styles.link} to='/'>{t("home")}</Link>
+        <Link className={styles.link} to=''>{t("care.service")}</Link>
+        <Link className={styles.link} to='https://pharmacy.jiohealth.com/'>{t("jio.pharmacy")}</Link>
+        <Link className={styles.link} to='/clinics'>{t("clinics")}</Link>
+        <Link className={styles.link} to='/doctors'>{t("doctors")}</Link>
         <div className={styles.translates}>
           <div onClick={() => changeLanguage('vi')}
             className={styles.translate}
@@ -62,7 +63,7 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 

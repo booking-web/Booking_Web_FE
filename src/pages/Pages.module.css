@@ -12,3 +12,20 @@
     cursor: pointer;
   }
 }
+
+.container {
+  position: relative;
+  padding: 0 calc((100% - 1100px)/ 2);
+}
+
+.find {
+  display: flex;
+  gap: 35px;
+}
+
+.abc {
+  position: relative;
+  background-color: #f2f3ff;
+  height: auto;
+  overflow: hidden;
+}

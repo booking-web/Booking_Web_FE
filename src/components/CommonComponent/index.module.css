@@ -72,12 +72,52 @@
   display: flex;
   justify-content: space-around;
   width: 100%;
-}
 
-.action {
   &:hover {
     cursor: pointer;
     color: blue;
     text-decoration: underline;
   }
+}
+
+/*Search*/
+
+.searchBox {
+  position: relative;
+  width: calc(100% / 3.2);
+}
+
+.input {
+  padding: 5px 20px;
+  height: 50px;
+  border-radius: 5px;
+  opacity: 1;
+  box-sizing: border-box;
+  background-color: #dbdeff;
+  border: none;
+  position: relative;
+  width: 100%;
+}
+
+.btnSearch {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 14px 18px 12px;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 100%;
+
+  &:hover {
+    box-shadow: 0 0 4px #2320D4;
+  }
+}
+
+.icon {
+  color: #2FC1A6;
+  font-size: 17px;
+  font-weight: 900;
 }

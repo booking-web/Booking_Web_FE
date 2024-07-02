@@ -1,0 +1,39 @@
+.background {
+  height: 700px;
+  background-image: url("../../../images//ClinicPage_Images/bg.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  position: absolute;
+  top: 20%;
+  color: white;
+  max-width: 500px;
+  padding: 0 calc((100% - 1100px)/ 2);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.highlight {
+  background-color: #3cffff;
+  border-radius: 100px;
+  color: #111c63;
+  padding: 4px 6px;
+  margin-right: 8px;
+}
+
+.btn {
+  margin-top: 20px;
+  background: linear-gradient(90.16deg, #f37d7d 4.64%, #d635b2 86.12%);
+  margin-right: 10px;
+  padding: 16px 20px;
+  color: #fff;
+  border-radius: 100px;
+  font-size: 18px;
+  border: none;
+}

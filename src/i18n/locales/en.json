@@ -86,5 +86,16 @@
   "confirm.password": "Confirm Password",
   "sendOTP": "Send OTP",
   "enter.OTP": "Enter OTP",
-  "something.went.wrong": "something went wrong. Please try again !"
+  "something.went.wrong": "something went wrong. Please try again !",
+  "doctors.bg.title": "Top Doctors from Top Hospitals",
+  "doctors.bg.content1": "Our doctors have been vaccinated against COVID-19",
+  "doctors.bg.content2": "Jio’s leading Doctors are affiliated with the best hospitals with over 10 years of clinical experience on average, cover a broad range of specialities and are dedicated to serving you.",
+  "find.your.doctor": "Find Your Doctor",
+  "search.by.name": "Search by name",
+  "search.by.specialty": "Search by specialty",
+  "clinic.bg.title1": "We have more than ",
+  "clinic.bg.title2": "specialties with more than ",
+  "clinic.bg.title3": "doctors ready to serve you and your family",
+  "find.clinic.or.your.disease.symptoms": "Find Clinic or Your Disease Symptoms",
+  "select.specialty": "Select Specialty"
 }

@@ -1,0 +1,93 @@
+/*banner*/
+
+.container {
+  padding-top: 50px;
+  min-height: 900px;
+  margin-bottom: -200px;
+  position: relative;
+}
+
+#bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.bg1 {
+  background-image: url("../../../images/DoctorsPage_images//Header/bg1.svg");
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bg2 {
+  background-image: url("../../../images/DoctorsPage_images//Header/bg2.png");
+  background-position: right top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.bg4 {
+  background-image: url("../../../images/DoctorsPage_images//Header/bg4.svg");
+  background-repeat: no-repeat;
+}
+
+.contents {
+  max-width: 500px;
+  padding: 0 calc((100% - 1100px)/ 2);
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  font-size: 52px;
+  line-height: 55px;
+  margin-top: 30px;
+}
+
+.content1 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 370px;
+  background: rgba(255, 255, 255, .1);
+  position: relative;
+  z-index: 1;
+  border-radius: 100px;
+  padding: 2px;
+  padding-right: 30px;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 9px;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, .1);
+  }
+}
+
+.content2 {
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  position: relative;
+  z-index: 1;
+  max-width: 400px;
+}
+
+.a {
+  background-image: url("../../../images/DoctorsPage_images/Item/bg1.svg");
+  background-size: cover;
+  height: 100%;
+}

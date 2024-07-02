@@ -86,5 +86,16 @@
   "confirm.password": "Xác nhận mật khẩu",
   "sendOTP": "Gửi mã OTP",
   "enter.OTP": "Nhập Mã OTP",
-  "something.went.wrong": "Đã xảy ra lỗi. Vui lòng thử lại !"
+  "something.went.wrong": "Đã xảy ra lỗi. Vui lòng thử lại !",
+  "doctors.bg.title": "Đội ngũ Bác sĩ ưu tú từ các Bệnh viện hàng đầu",
+  "doctors.bg.content1": "Y bác sĩ của chúng tôi đã được tiêm vaccine phòng ngừa COVID-19",
+  "doctors.bg.content2": "Đội ngũ Bác sĩ ưu tú với thâm niên trung bình 10 năm kinh nghiệm hiện công tác tại các Bệnh viện hàng đầu Việt Nam, thăm khám trên nhiều chuyên khoa đa dạng, tận tâm chăm sóc bạn cùng gia đình.",
+  "find.your.doctor": "Tìm bác sĩ của bạn",
+  "search.by.name": "Tìm theo tên",
+  "search.by.specialty": "Tìm theo chuyên khoa",
+  "clinic.bg.title1": "Bệnh viện chúng tôi có hơn ",
+  "clinic.bg.title2": "chuyên khoa với hơn ",
+  "clinic.bg.title3": "bác sĩ sẵn sàng phục vụ bạn và gia đình các bạn",
+  "find.clinic.or.your.disease.symptoms": "Tìm chuyên khoa hoặc triệu chứng",
+  "select.specialty": "Tìm Chuyên khoa"
 }
