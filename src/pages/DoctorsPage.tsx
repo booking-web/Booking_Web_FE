@@ -9,42 +9,23 @@ import SearchComponent from '../components/CommonComponent/SearchComponent'
 import SelectClinic from '../components/Doctors_Clinics_Components/SelectClinic'
 import List from '../components/Doctors_Clinics_Components/List'
 import DoctorItem from '../components/Doctors_Clinics_Components/DoctorComponents/DoctorItem'
+import a from "../images/test/bs.png"
 
 const doctorData = [
-  { name: 'Doctor A' },
-  { name: 'Doctor B' },
-  { name: 'Doctor C' },
-  { name: 'Doctor D' },
-  { name: 'Doctor E' },
-  { name: 'Doctor F' },
+  { image: a, name: 'Doctor A', clinic: "Khoa nhi", place: "Bệnh viện Lê Văn Thịnh", exp: 15 },
+  { image: a, name: 'Doctor B', clinic: "Khoa nhi", place: "Bệnh viện Lê Văn Thịnh", exp: 15 },
+  { image: a, name: 'Doctor C', clinic: "Khoa nhi", place: "Bệnh viện Lê Văn Thịnh", exp: 15 },
+  { image: a, name: 'Doctor D', clinic: "Khoa nhi", place: "Bệnh viện Lê Văn Thịnh", exp: 15 },
+  { image: a, name: 'Doctor E', clinic: "Khoa nhi", place: "Bệnh viện Lê Văn Thịnh", exp: 15 },
+  { image: a, name: '', clinic: "", place: "", exp: "" },
 
-  { name: 'Doctor A' },
-  { name: 'Doctor B' },
-  { name: 'Doctor C' },
-  { name: 'Doctor D' },
-  { name: 'Doctor E' },
-  { name: 'Doctor F' },
+  { image: a, name: 'Doctor A' },
+  { image: a, name: 'Doctor B' },
+  { image: a, name: 'Doctor C' },
+  { image: a, name: 'Doctor D' },
+  { image: a, name: 'Doctor E' },
+  { image: a, name: 'Doctor F' },
 
-  { name: 'Doctor A' },
-  { name: 'Doctor B' },
-  { name: 'Doctor C' },
-  { name: 'Doctor D' },
-  { name: 'Doctor E' },
-  { name: 'Doctor F' },
-
-  { name: 'Doctor A' },
-  { name: 'Doctor B' },
-  { name: 'Doctor C' },
-  { name: 'Doctor D' },
-  { name: 'Doctor E' },
-  { name: 'Doctor F' },
-
-  { name: 'Doctor A' },
-  { name: 'Doctor B' },
-  { name: 'Doctor C' },
-  { name: 'Doctor D' },
-  { name: 'Doctor E' },
-  { name: 'Doctor F' },
 ];
 
 const DoctorsPage = () => {

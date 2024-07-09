@@ -6,6 +6,7 @@ import en from "../../images/navbar_images/en.png";
 import { useLanguage } from "../../contexts/LanguagesContext";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Notification from "../CommonComponent/Notification";
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -56,6 +57,7 @@ const Navbar = () => {
             <img src={en} />
           </div>
         </div>
+        <Notification />
         <div className={styles.buttons}>
           <button className={styles.leftButton}>{t("make.an.appointment.now")}</button>
           <Link to="/login-page">

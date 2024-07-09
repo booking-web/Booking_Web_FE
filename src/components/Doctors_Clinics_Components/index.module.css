@@ -28,7 +28,7 @@
 .item {
   position: relative;
   width: calc(100%/ 3.2);
-  height: 200px;
+  min-height: 200px;
   margin-top: 35px;
   border: 1px solid transparent;
   box-shadow: 5px 10px 30px #ccd6ef;

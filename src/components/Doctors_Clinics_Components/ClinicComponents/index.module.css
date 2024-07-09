@@ -37,3 +37,32 @@
   font-size: 18px;
   border: none;
 }
+
+.item {
+  background: linear-gradient(to bottom, #f7a4ff, #a6e1ff);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+  border: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+}
+
+.icon {
+  position: relative;
+  width: 100px;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-weight: bold;
+
+  &:hover {
+    color: red;
+  }
+}
