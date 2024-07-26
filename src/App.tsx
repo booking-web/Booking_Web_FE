@@ -9,20 +9,22 @@ import DoctorsPage from "./pages/DoctorsPage";
 import AdminPage from "./pages/AdminPage";
 import ClinicPage from "./pages/ClinicPage";
 import DoctorAuthPage from "./pages/DoctorAuthPage";
+import UserProfile from "./pages/UserProfile";
+import DoctorDetailPage from "./pages/DoctorDetailPage";
 
 const mainRoutes = [
 
   //auth
   {
-    path: "/login-page",
+    path: "/auth-page",
     element: <LoginPage />,
-    key: "login",
+    key: "auth",
   },
 
   // profile
   {
-    path: "/user-profiles",
-    // element: <Profile />,
+    path: "/user-profile",
+    element: <UserProfile />,
     key: "user-profile",
     authenticated: true,
   },
@@ -45,6 +47,12 @@ const mainRoutes = [
     path: "/doctors",
     element: <DoctorsPage />,
     key: "doctors"
+  },
+
+  {
+    path: "/doctors/:id/detail",
+    element: <DoctorDetailPage />,
+    key: "doctor-detail"
   },
 
   // clinics
@@ -90,7 +98,6 @@ function App() {
           <div>
             <Spin />
           </div>
-
         )}
       </>
     </div>

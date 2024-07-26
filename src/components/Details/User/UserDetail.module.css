@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  min-width: 1200px;
+  gap: 220px;
+}
+
+.img {
+  border-radius: 50%;
+  height: 200px;
+}
+
+.info {}
+
+.link {
+  text-decoration: underline;
+  color: blue;
+}

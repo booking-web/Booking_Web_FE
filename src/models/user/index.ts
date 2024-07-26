@@ -12,11 +12,15 @@ export interface ILogin {
 }
 
 export interface IRegister {
-  firstName?: string
-  lastName?: string,
+  fullName?: string
   email?: string,
   password?: string,
   confirmPassword?: string
   address?: string
   phoneNumber?: string
+}
+
+export interface IChangePassword {
+  confirmNewPassword?: string,
+  newPassword?: string
 }

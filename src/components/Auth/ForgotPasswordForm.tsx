@@ -1,47 +1,58 @@
-import React, { useState } from 'react'
-import styles from "./Auth.module.css"
-import { useTranslation } from 'react-i18next'
-import { Input, Form, Button } from 'antd/es/'
-import ModalOTP from '../ModalOTP/ModalOTP'
+import styles from "./Auth.module.css";
+import { useTranslation } from 'react-i18next';
+import { Input, Form, Button } from 'antd/es/';
+import { useMutation } from '@tanstack/react-query';
+import { forgotPassword } from '../../Services/user';
+import toast from 'react-hot-toast';
+import { AxiosError } from 'axios';
+import { useModalContext } from "../../contexts/ModalContext";
 
 type ForgotPassword = {
-  email: string
-}
+  email: string;
+};
 
 const ForgotPasswordForm = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const { t } = useTranslation();
+  const { setModalState } = useModalContext();
+  const [form] = Form.useForm();
 
-  const showModal = () => {
-    setIsModalOpen(true);
+  const forgotPasswordMutation = useMutation({
+    mutationFn: forgotPassword,
+    onSuccess: () => {
+      toast.success(t("confirm.email.successfully"));
+      setModalState("changePassword");
+    },
+    onError: (err: AxiosError<{ message: string }>) => {
+      toast.error(err?.response?.data.message || t("something.went.wrong"));
+    },
+  });
+
+  const onSubmit = (values: ForgotPassword) => {
+    forgotPasswordMutation.mutate(values.email);
+    console.log(values.email);
+
   };
-
-  const handleOk = () => {
-    setIsModalOpen(false);
-  };
-
-  const handleCancel = () => {
-    setIsModalOpen(false);
-  };
-
-  const { t } = useTranslation()
 
   return (
     <div className={styles.container}>
-      <Form className={styles.form}>
+      <Form
+        className={styles.form}
+        form={form}
+        onFinish={onSubmit}
+      >
         <Form.Item<ForgotPassword>
-          label="Email"
+          label={t("Email")}
           name="email"
           rules={[{ required: true, message: t("required.mess") }]}
         >
           <Input />
         </Form.Item>
+        <div className={styles.btn}>
+          <Button type='primary' htmlType='submit'>{t("send")}</Button>
+        </div>
       </Form>
-      <div className={styles.btn}>
-        <Button onClick={showModal}>{t("sendOTP")}</Button>
-        <ModalOTP open={isModalOpen} onOk={handleOk} onCancel={handleCancel} />
-      </div>
     </div>
-  )
-}
+  );
+};
 
-export default ForgotPasswordForm
+export default ForgotPasswordForm;

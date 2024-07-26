@@ -17,7 +17,6 @@ const Background10 = () => {
   const { selectedLanguage } = useLanguage();
 
   useEffect(() => {
-    console.log('Current Language:', selectedLanguage);
   }, [selectedLanguage]);
 
   return (

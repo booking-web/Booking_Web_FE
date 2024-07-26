@@ -13,6 +13,8 @@
   }
 }
 
+/*clinic + doctor*/
+
 .container {
   position: relative;
   padding: 0 calc((100% - 1100px)/ 2);
@@ -23,9 +25,22 @@
   gap: 35px;
 }
 
-.abc {
+/*Doctor Page*/
+
+.DoctorPageContainer {
   position: relative;
   background-color: #f2f3ff;
   height: auto;
   overflow: hidden;
+}
+
+/*User Profile*/
+
+.UserProfilePageContainer {
+  position: relative;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

@@ -33,7 +33,7 @@ const DoctorsPage = () => {
   const { t } = useTranslation()
 
   return (
-    <div className={styles.abc}>
+    <div className={styles.DoctorPageContainer}>
       <HeaderCovid />
       <Navbar />
       <DoctorBanner />

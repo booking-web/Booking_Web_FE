@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom"
 const LoginPage = () => {
   const navigate = useNavigate()
   return (
-    <div className="" style={{ position: "relative", height: "100vh", overflow: "hidden" }}>
+    <div style={{ position: "relative", height: "100vh", overflow: "hidden" }}>
       <LogoutOutlined className={styles.icon} onClick={() => navigate(-1)} />
       <Background1 children={<ModalCustom />}>
       </Background1>

@@ -1,6 +1,6 @@
 import React, { createContext, useState, useContext, ReactNode } from 'react';
 
-type ModalState = 'login' | 'register' | 'forgotPassword';
+type ModalState = 'login' | 'register' | 'forgotPassword' | 'changePassword';
 
 interface ModalContextProps {
   modalState: ModalState;
