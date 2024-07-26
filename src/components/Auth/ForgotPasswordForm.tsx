@@ -19,7 +19,11 @@ const ForgotPasswordForm = () => {
   const forgotPasswordMutation = useMutation({
     mutationFn: forgotPassword,
     onSuccess: () => {
-      toast.success(t("confirm.email.successfully"));
+      //TODO: Chỗ này thêm màn hình load hết 5s rồi ra cái thông báo gửi mail thành công
+      //* Vì ước tính sau khi bấm nút khoảng 5s thì mail sẽ nhận đc thông báo
+      setTimeout(() => { 
+        toast.success(t("confirm.email.successfully"));
+      },5000)
       // setModalState("changePassword");
     },
     onError: (err: AxiosError<{ message: string }>) => {
