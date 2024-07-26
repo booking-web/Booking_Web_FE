@@ -14,7 +14,7 @@ interface ModalProviderProps {
 }
 
 export const ModalProvider: React.FC<ModalProviderProps> = ({ children }) => {
-  const [modalState, setModalState] = useState<ModalState>('login');
+  const [modalState, setModalState] = useState<ModalState>('changePassword');
 
   return (
     <ModalContext.Provider value={{ modalState, setModalState }}>

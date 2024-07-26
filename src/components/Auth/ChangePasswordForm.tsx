@@ -12,7 +12,7 @@ import httpClient from '../../client/httpClient';
 
 type ChangePassword = {
   newPassword: string,
-  confirmNewPassword: string
+  confirmPassword: string
 }
 
 const ChangePasswordForm = () => {
@@ -33,9 +33,19 @@ const ChangePasswordForm = () => {
   });
 
   const onSubmit = async (data: IChangePassword) => {
-    if (data.newPassword !== data.confirmNewPassword) {
+    console.log(data)
+    if (data.newPassword !== data.confirmPassword) {
       toast.error(t("confirm.password.not.match"));
     }
+
+    var localEmail = localStorage.getItem("email")
+    
+    if (localEmail == null) {
+      toast.error(t("email.is.null"));
+    } else { 
+      data.email = localEmail
+    }
+    console.log(data)
     changePasswordMutate.mutate(data);
   }
 
@@ -55,8 +65,8 @@ const ChangePasswordForm = () => {
         </Form.Item>
 
         <Form.Item<ChangePassword>
-          label={t("confirm.new.password")}
-          name="confirmNewPassword"
+          label={t("confirm.password")}
+          name="confirmPassword"
           rules={[{ required: true, message: t("required.mess") }]}
         >
           <Input />

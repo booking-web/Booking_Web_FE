@@ -21,6 +21,7 @@ export interface IRegister {
 }
 
 export interface IChangePassword {
-  confirmNewPassword?: string,
+  email: string,
+  confirmPassword?: string,
   newPassword?: string
 }

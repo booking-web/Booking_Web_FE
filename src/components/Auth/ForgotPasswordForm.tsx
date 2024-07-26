@@ -20,7 +20,7 @@ const ForgotPasswordForm = () => {
     mutationFn: forgotPassword,
     onSuccess: () => {
       toast.success(t("confirm.email.successfully"));
-      setModalState("changePassword");
+      // setModalState("changePassword");
     },
     onError: (err: AxiosError<{ message: string }>) => {
       toast.error(err?.response?.data.message || t("something.went.wrong"));
@@ -30,6 +30,7 @@ const ForgotPasswordForm = () => {
   const onSubmit = (values: ForgotPassword) => {
     forgotPasswordMutation.mutate(values.email);
     console.log(values.email);
+    localStorage.setItem("email", values.email)
 
   };
 

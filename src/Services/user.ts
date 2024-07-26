@@ -19,7 +19,7 @@ export const register = async (data: IRegister) => {
 }
 
 export const forgotPassword = async (email: any) => {
-  const response = await httpClient.get(`/api/v1/forgot-password?email=${email}`);
+  const response = await httpClient.post(`/api/v1/forgot-password?email=${email}`);
 
   return response.data
 }
