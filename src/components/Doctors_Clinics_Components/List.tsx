@@ -3,12 +3,12 @@ import styles from "./index.module.css";
 import { Link } from "react-router-dom";
 
 interface IListProps {
-  data: any;
-  renderType: any;
-  renderItem: (item: any) => JSX.Element
+  data: any[];
+  renderType: string;
+  renderItem: (item: any) => JSX.Element;
 }
 
-const List = ({ data, renderType, renderItem }: IListProps) => {
+const List = ({ data = [], renderType, renderItem }: IListProps) => {
   const [visibleItems, setVisibleItems] = useState(renderType === "doctor" ? 6 : data.length);
 
   const handleLoadMore = () => {
@@ -17,9 +17,9 @@ const List = ({ data, renderType, renderItem }: IListProps) => {
 
   const generateLink = (item: { id: any }) => {
     if (renderType === "doctor") {
-      return `/doctors/${item.id}/detail`;
+      return `/doctors/detail?doctorId=${item.id}`;
     } else if (renderType === "clinic") {
-      return `/clinics/${item.id}/detail`;
+      return `/clinics/detail?clinicId=${item.id}`;
     }
     return "#";
   };
@@ -27,7 +27,7 @@ const List = ({ data, renderType, renderItem }: IListProps) => {
   return (
     <div>
       <div className={styles.list}>
-        {data.slice(0, visibleItems).map((item?: any, index?: number) => (
+        {Array.isArray(data) && data.slice(0, visibleItems).map((item, index) => (
           <Link to={generateLink(item)} key={index} className={styles.item}>
             {renderItem(item)}
           </Link>

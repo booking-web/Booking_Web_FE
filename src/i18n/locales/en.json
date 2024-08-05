@@ -124,5 +124,14 @@
   "doctor.of.medicine": "Doctor of Medicine",
   "en/vi": "English/Vietnamese",
   "education.and.experiences": "Education and Experiences",
-  "confirm.password.not.match": "Confirm Password not match"
+  "confirm.password.not.match": "Confirm Password not match",
+  "clinic.detail.content": "Jio Health provides health care services from specialists ready to serve you and your family.",
+  "the.symptoms": "The Symptoms",
+  "upload": "Upload",
+  "confirm": "Confirm",
+  "update.info": "Update Information",
+  "delete.account": "Delete Account",
+  "update.info.user.successfully": "Update information user successfully !",
+  "warning": "Warning !",
+  "do.you.want.to.delete.your.account": "Do you want to delete your account ?"
 }

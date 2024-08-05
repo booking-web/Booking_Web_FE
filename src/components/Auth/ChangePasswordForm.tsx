@@ -1,6 +1,5 @@
 import { useMutation } from '@tanstack/react-query';
 import { Button, Form, Input } from 'antd';
-import React from 'react'
 import { changePassword } from '../../Services/user';
 import toast from 'react-hot-toast';
 import { useModalContext } from '../../contexts/ModalContext';
@@ -8,7 +7,6 @@ import { useTranslation } from 'react-i18next';
 import { AxiosError } from 'axios';
 import styles from "./Auth.module.css"
 import { IChangePassword } from '../../models/user';
-import httpClient from '../../client/httpClient';
 
 type ChangePassword = {
   newPassword: string,
@@ -39,10 +37,10 @@ const ChangePasswordForm = () => {
     }
 
     var localEmail = localStorage.getItem("email")
-    
+
     if (localEmail == null) {
       toast.error(t("email.is.null"));
-    } else { 
+    } else {
       data.email = localEmail
     }
     console.log(data)

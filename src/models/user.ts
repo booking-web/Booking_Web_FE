@@ -25,3 +25,9 @@ export interface IChangePassword {
   confirmPassword?: string,
   newPassword?: string
 }
+
+export interface IUpdateUser {
+  avatar?: string
+  email?: string,
+  fullName?: string
+}

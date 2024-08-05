@@ -10,27 +10,31 @@ import SelectClinic from '../components/Doctors_Clinics_Components/SelectClinic'
 import List from '../components/Doctors_Clinics_Components/List'
 import DoctorItem from '../components/Doctors_Clinics_Components/DoctorComponents/DoctorItem'
 import a from "../images/test/bs.png"
+import { useQuery } from '@tanstack/react-query'
+import { getAllDoctor } from '../Services/doctor'
+import httpClient from '../client/httpClient'
 
-const doctorData = [
-  { image: a, name: 'Doctor A', clinic: "Khoa nhi", place: "Bệnh viện Lê Văn Thịnh", exp: 15 },
-  { image: a, name: 'Doctor B', clinic: "Khoa nhi", place: "Bệnh viện Lê Văn Thịnh", exp: 15 },
-  { image: a, name: 'Doctor C', clinic: "Khoa nhi", place: "Bệnh viện Lê Văn Thịnh", exp: 15 },
-  { image: a, name: 'Doctor D', clinic: "Khoa nhi", place: "Bệnh viện Lê Văn Thịnh", exp: 15 },
-  { image: a, name: 'Doctor E', clinic: "Khoa nhi", place: "Bệnh viện Lê Văn Thịnh", exp: 15 },
-  { image: a, name: '', clinic: "", place: "", exp: "" },
+export interface DoctorData {
+  data?: any
+}
 
-  { image: a, name: 'Doctor A' },
-  { image: a, name: 'Doctor B' },
-  { image: a, name: 'Doctor C' },
-  { image: a, name: 'Doctor D' },
-  { image: a, name: 'Doctor E' },
-  { image: a, name: 'Doctor F' },
-
-];
-
-const DoctorsPage = () => {
+const DoctorsPage = ({ data }: DoctorData) => {
 
   const { t } = useTranslation()
+
+  // const doctorData = useQuery({
+  //   queryKey: ['doctorList'],
+  //   queryFn: () => getAllDoctor(data),
+  // })
+
+  const doctorData = useQuery({
+    queryKey: ['doctorList'],
+    queryFn: async (data: any) => {
+      const response = await httpClient.get("/api/v1/doctor/list", data)
+      console.log(response.data.data);
+      return response.data.data
+    }
+  })
 
   return (
     <div className={styles.DoctorPageContainer}>
@@ -45,7 +49,7 @@ const DoctorsPage = () => {
             <SearchComponent placeholder={t("find.your.doctor")} className="" />
             <SelectClinic />
           </div>
-          <List data={doctorData} renderType="doctor" renderItem={(item) => <DoctorItem item={item} />} />
+          <List data={doctorData.data} renderType="doctor" renderItem={(item) => <DoctorItem item={item} />} />
         </div>
       </div>
     </div>

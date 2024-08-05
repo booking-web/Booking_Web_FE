@@ -11,6 +11,7 @@ import ClinicPage from "./pages/ClinicPage";
 import DoctorAuthPage from "./pages/DoctorAuthPage";
 import UserProfile from "./pages/UserProfile";
 import DoctorDetailPage from "./pages/DoctorDetailPage";
+import ClinicDetailPage from "./pages/ClinicDetailPage";
 
 const mainRoutes = [
 
@@ -50,7 +51,7 @@ const mainRoutes = [
   },
 
   {
-    path: "/doctors/:id/detail",
+    path: "/doctors/detail",
     element: <DoctorDetailPage />,
     key: "doctor-detail"
   },
@@ -60,6 +61,12 @@ const mainRoutes = [
     path: "/clinics",
     element: <ClinicPage />,
     key: "clinic"
+  },
+
+  {
+    path: "/clinics/detail",
+    element: <ClinicDetailPage />,
+    key: "clinic-detail"
   },
 
   // admin

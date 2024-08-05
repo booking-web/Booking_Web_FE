@@ -12,17 +12,28 @@ import separate2 from "../../../images/backgrounds/doctor-detail/separate2.svg"
 import separate3 from "../../../images/backgrounds/doctor-detail/separate3.svg"
 import Separator from "../../CommonComponent/ContentComponents/Separator"
 import test from "../../../images/test/bs.png"
+import { useQuery } from "@tanstack/react-query"
+import { useSearchParams } from "react-router-dom"
+import { getDetailDoctor } from "../../../Services/doctor"
 
 
 const DoctorDetail = () => {
 
   const { t } = useTranslation()
+  const [searchParams] = useSearchParams();
+  const id = searchParams.get('doctorId');
+
+  const { data } = useQuery({
+    queryKey: ['detailDoctor'],
+    queryFn: () => getDetailDoctor(id),
+    enabled: !!id
+  })
 
   const items = [
     {
       img: <img src={icon1} />,
       title: t("clinic"),
-      content: "a"
+      content: ""
     },
     {
       img: <img src={icon2} />,

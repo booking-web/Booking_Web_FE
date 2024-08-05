@@ -5,7 +5,6 @@ import { useMutation } from '@tanstack/react-query';
 import { forgotPassword } from '../../Services/user';
 import toast from 'react-hot-toast';
 import { AxiosError } from 'axios';
-import { useModalContext } from "../../contexts/ModalContext";
 
 type ForgotPassword = {
   email: string;
@@ -13,14 +12,12 @@ type ForgotPassword = {
 
 const ForgotPasswordForm = () => {
   const { t } = useTranslation();
-  const { setModalState } = useModalContext();
   const [form] = Form.useForm();
 
   const forgotPasswordMutation = useMutation({
     mutationFn: forgotPassword,
     onSuccess: () => {
       toast.success(t("confirm.email.successfully"));
-      // setModalState("changePassword");
     },
     onError: (err: AxiosError<{ message: string }>) => {
       toast.error(err?.response?.data.message || t("something.went.wrong"));

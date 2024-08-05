@@ -114,7 +114,7 @@
   "video.call.with.doctors": "Video call với bác sĩ",
   "click.here": "Bấm tại đây !",
   "change.password.successfully": "Dổi mật khẩu thành công !",
-   "new.password": "Mật khẩu mới",
+  "new.password": "Mật khẩu mới",
   "confirm.new.password": "Xác nhận mật khẩu mới",
   "clinic": "Chuyên khoa",
   "training": "Nơi đào tạo",
@@ -124,5 +124,14 @@
   "doctor.of.medicine": "Tiến sĩ y khoa",
   "en/vi": "Tiếng Anh/Tiếng Việt",
   "education.and.experiences": "Học vấn và kinh nghiệm",
-  "confirm.password.not.match": "Xác nhận mật khẩu không khớp"
+  "confirm.password.not.match": "Xác nhận mật khẩu không khớp",
+  "clinic.detail.content": "Jio Health cung cấp các dịch vụ chăm sóc sức khỏe đến từ các chuyên khoa sẵn sàng phục vụ bạn và gia đình bạn",
+  "the.symptoms": "Các Triệu Chứng",
+  "upload": "Tải lên",
+  "confirm": "Xác nhận",
+  "update.info": "Cập nhật thông tin",
+  "delete.account": "Xóa tài khoản",
+  "update.info.user.successfully": "Cập nhật thông tin người dùng thành công !",
+  "warning": "Cảnh báo !",
+  "do.you.want.to.delete.your.account": "Bạn có muốn xóa tài khoản của bạn không ?"
 }
