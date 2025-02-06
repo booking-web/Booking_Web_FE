@@ -1,22 +1,20 @@
-import { useEffect, useRef } from 'react';
-import Slider from 'react-slick';
+import { useRef } from "react";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import styles from "./SlickSlider.module.css"
-import banner1 from "../../images/slickSlider_images/banner1.jpg"
-import banner2 from "../../images/slickSlider_images/banner2.jpg"
-import banner3 from "../../images/slickSlider_images/banner3.jpg"
-import banner4 from "../../images/slickSlider_images/banner4.jpg"
-import banner5 from "../../images/slickSlider_images/banner5.jpg"
-import heart from "../../images/slickSlider_images/heart.svg"
-import clinic from "../../images/slickSlider_images/clinic.svg"
-import { LeftOutlined, RightOutlined } from '@ant-design/icons';
-import { useTranslation } from 'react-i18next';
-
+import styles from "./SlickSlider.module.css";
+import banner1 from "../../images/slickSlider_images/banner1.jpg";
+import banner2 from "../../images/slickSlider_images/banner2.jpg";
+import banner3 from "../../images/slickSlider_images/banner3.jpg";
+import banner4 from "../../images/slickSlider_images/banner4.jpg";
+import banner5 from "../../images/slickSlider_images/banner5.jpg";
+import heart from "../../images/slickSlider_images/heart.svg";
+import clinic from "../../images/slickSlider_images/clinic.svg";
+import { RightOutlined } from "@ant-design/icons";
+import { useTranslation } from "react-i18next";
 
 const MyCarousel = () => {
-
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   const refSlide = useRef<Slider | null>(null);
 
   const handleClickNext = () => {
@@ -25,14 +23,13 @@ const MyCarousel = () => {
     }
   };
 
-
   const settings = {
     infinite: true,
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false
-  }
+    autoplay: false,
+  };
 
   return (
     <div className={styles.container}>
@@ -54,12 +51,21 @@ const MyCarousel = () => {
         </div>
       </Slider>
       <div className={styles.buttons}>
-        <button onClick={handleClickNext} className={styles.button} id={styles.right}><RightOutlined /></button>
+        <button
+          onClick={handleClickNext}
+          className={styles.button}
+          id={styles.right}>
+          <RightOutlined />
+        </button>
       </div>
       <div className={styles.booking}>
         <img className={styles.icon} id={styles.heart} src={heart} />
-        <h3 className={styles.title}> {t("more.than300k")} <br /> {t("customers.trust")} <br /> {(t("the.service"))} </h3>
-        <button className={styles.btn} > {t("make.an.appointment")} </button>
+        <h3 className={styles.title}>
+          {" "}
+          {t("more.than300k")} <br /> {t("customers.trust")} <br />{" "}
+          {t("the.service")}{" "}
+        </h3>
+        <button className={styles.btn}> {t("make.an.appointment")} </button>
         <img className={styles.icon} id={styles.clinic} src={clinic} />
       </div>
     </div>

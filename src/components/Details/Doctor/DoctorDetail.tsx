@@ -21,7 +21,7 @@ const DoctorDetail = () => {
   const [searchParams] = useSearchParams();
   const id = searchParams.get("doctorId");
 
-  const { data } = useQuery({
+  useQuery({
     queryKey: ["detailDoctor"],
     queryFn: () => getDetailDoctor(id),
     enabled: !!id,

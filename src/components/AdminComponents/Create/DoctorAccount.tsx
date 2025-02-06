@@ -8,7 +8,6 @@ import { createDoctorAccount } from "../../../Services/admin";
 import { ICreateDoctorAccount } from "../../../models/admin";
 import { useState } from "react";
 import { LoadingOutlined, PlusOutlined } from "@ant-design/icons";
-import { UploadChangeParam } from "antd/es/upload";
 
 type DoctorAccount = {
   doctorName: string;
@@ -26,9 +25,9 @@ type DoctorAccount = {
 const DoctorAccount = () => {
   const { t } = useTranslation();
   const [form] = Form.useForm();
-  const [loading, setLoading] = useState(false);
+  const [loading] = useState(false);
   const [imageUrl, setImageUrl] = useState<string>();
-  const [file, setFile] = useState<File | null>(null);
+  const [, setFile] = useState<File | null>(null);
 
   const registerMutate = useMutation({
     mutationFn: createDoctorAccount,
@@ -65,7 +64,15 @@ const DoctorAccount = () => {
   };
 
   const uploadButton = (
-    <button style={{ border: "1px solid #dbdbdb", background: "none", width: "100%", height: "100%", color: "black" }} type="button">
+    <button
+      style={{
+        border: "1px solid #dbdbdb",
+        background: "none",
+        width: "100%",
+        height: "100%",
+        color: "black",
+      }}
+      type="button">
       {loading ? <LoadingOutlined /> : <PlusOutlined />}
       <div style={{ marginTop: 8 }}>Upload</div>
     </button>
@@ -76,22 +83,40 @@ const DoctorAccount = () => {
   return (
     <div>
       <AdminTitle title={t("create") + " " + t("doctor.account")} />
-      <Form form={form} layout="vertical" onFinish={onSubmit} initialValues={{ password: "123" }}>
+      <Form
+        form={form}
+        layout="vertical"
+        onFinish={onSubmit}
+        initialValues={{ password: "123" }}>
         <Form.Item<DoctorAccount> name="image">
           <div style={{ marginBottom: "20px", display: "flex" }}>
-            <Upload action="/api/v1/doctors" listType="picture-circle" showUploadList={false} onChange={handleChange}>
-              {imageUrl ? <img src={imageUrl} alt="avatar" style={{ width: "50%" }} /> : uploadButton}
+            <Upload
+              action="/api/v1/doctors"
+              listType="picture-circle"
+              showUploadList={false}
+              onChange={handleChange}>
+              {imageUrl ? (
+                <img src={imageUrl} alt="avatar" style={{ width: "50%" }} />
+              ) : (
+                uploadButton
+              )}
             </Upload>
           </div>
         </Form.Item>
         <Row gutter={16}>
           <Col span={12}>
-            <Form.Item<DoctorAccount> label={t("Email")} name="email" rules={[{ required: true, message: t("required.mess") }]}>
+            <Form.Item<DoctorAccount>
+              label={t("Email")}
+              name="email"
+              rules={[{ required: true, message: t("required.mess") }]}>
               <Input />
             </Form.Item>
           </Col>
           <Col span={12}>
-            <Form.Item<DoctorAccount> label={t("password")} name="password" rules={[{ required: true, message: t("required.mess") }]}>
+            <Form.Item<DoctorAccount>
+              label={t("password")}
+              name="password"
+              rules={[{ required: true, message: t("required.mess") }]}>
               <Input />
             </Form.Item>
           </Col>
@@ -99,12 +124,18 @@ const DoctorAccount = () => {
 
         <Row gutter={16}>
           <Col span={12}>
-            <Form.Item<DoctorAccount> label={t("full.name")} name="doctorName" rules={[{ required: true, message: t("required.mess") }]}>
+            <Form.Item<DoctorAccount>
+              label={t("full.name")}
+              name="doctorName"
+              rules={[{ required: true, message: t("required.mess") }]}>
               <Input />
             </Form.Item>
           </Col>
           <Col span={12}>
-            <Form.Item<DoctorAccount> label={t("doctor.summary")} name="doctorSum" rules={[{ required: true, message: t("required.mess") }]}>
+            <Form.Item<DoctorAccount>
+              label={t("doctor.summary")}
+              name="doctorSum"
+              rules={[{ required: true, message: t("required.mess") }]}>
               <Input />
             </Form.Item>
           </Col>
@@ -112,12 +143,18 @@ const DoctorAccount = () => {
 
         <Row gutter={16}>
           <Col span={12}>
-            <Form.Item<DoctorAccount> label={t("exp")} name="expYear" rules={[{ required: true, message: t("required.mess") }]}>
+            <Form.Item<DoctorAccount>
+              label={t("exp")}
+              name="expYear"
+              rules={[{ required: true, message: t("required.mess") }]}>
               <Input />
             </Form.Item>
           </Col>
           <Col span={12}>
-            <Form.Item<DoctorAccount> label={t("specialty")} name="specialty" rules={[{ required: true, message: t("required.mess") }]}>
+            <Form.Item<DoctorAccount>
+              label={t("specialty")}
+              name="specialty"
+              rules={[{ required: true, message: t("required.mess") }]}>
               <Input />
             </Form.Item>
           </Col>
@@ -125,18 +162,27 @@ const DoctorAccount = () => {
 
         <Row gutter={16}>
           <Col span={12}>
-            <Form.Item<DoctorAccount> label={t("languages")} name="language" rules={[{ required: true, message: t("required.mess") }]}>
+            <Form.Item<DoctorAccount>
+              label={t("languages")}
+              name="language"
+              rules={[{ required: true, message: t("required.mess") }]}>
               <Input />
             </Form.Item>
           </Col>
           <Col span={12}>
-            <Form.Item<DoctorAccount> label={t("training.institution")} name="trainingInstitution" rules={[{ required: true, message: t("required.mess") }]}>
+            <Form.Item<DoctorAccount>
+              label={t("training.institution")}
+              name="trainingInstitution"
+              rules={[{ required: true, message: t("required.mess") }]}>
               <Input />
             </Form.Item>
           </Col>
         </Row>
 
-        <Form.Item<DoctorAccount> label={t("description")} name="description" rules={[{ required: true, message: t("required.mess") }]}>
+        <Form.Item<DoctorAccount>
+          label={t("description")}
+          name="description"
+          rules={[{ required: true, message: t("required.mess") }]}>
           <Input.TextArea />
         </Form.Item>
         <Button type="primary" htmlType="submit">

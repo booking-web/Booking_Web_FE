@@ -1,9 +1,8 @@
-import styles from "./index.module.css"
-import Title from "../../CommonComponent/ContentComponents/Title"
-import { useTranslation } from "react-i18next"
+import styles from "./index.module.css";
+import { useTranslation } from "react-i18next";
 
 const ClinicBanner = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   return (
     <div className={styles.background}>
       <div className={styles.content}>
@@ -17,7 +16,7 @@ const ClinicBanner = () => {
         <button className={styles.btn}>{t("learn.more")}</button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ClinicBanner
+export default ClinicBanner;
