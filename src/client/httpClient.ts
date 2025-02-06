@@ -1,11 +1,11 @@
 import axios from "axios";
 
 const httpClient = axios.create({
-  baseURL: import.meta.env.BE,
+  baseURL: import.meta.env.VITE_BE_URL
 });
 
 const getLocalToken = () => {
-  return localStorage.getItem("accessToken");
+  return localStorage.getItem("access_token");
 };
 
 httpClient.interceptors.request.use(

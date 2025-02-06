@@ -39,8 +39,8 @@ const Navbar = () => {
   const [token, setToken] = useState<string | null>(null);
 
   useEffect(() => {
-    const storedUserId = localStorage.getItem('userId');
-    const storedToken = localStorage.getItem('accessToken');
+    const storedUserId = localStorage.getItem('email');
+    const storedToken = localStorage.getItem('access_token') && localStorage.getItem("refresh_token");
 
     if (storedUserId && storedToken) {
       setUserId(storedUserId);

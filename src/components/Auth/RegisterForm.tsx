@@ -42,7 +42,6 @@ const RegisterForm = () => {
         form={form}
         onFinish={onSubmit}
       >
-
         <Form.Item<Register>
           label={t("full.name")}
           name="fullName"
@@ -84,14 +83,6 @@ const RegisterForm = () => {
           ]}
         >
           <Input.Password />
-        </Form.Item>
-
-        <Form.Item<Register>
-          label={t("address")}
-          name="address"
-          rules={[{ required: true, message: t("required.mess") }]}
-        >
-          <Input />
         </Form.Item>
 
         <div className={styles.btn}>

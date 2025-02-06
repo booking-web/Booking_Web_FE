@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface IChildren {
   children: React.ReactNode;
 }
@@ -17,4 +19,9 @@ export interface IText {
 export interface ISearch {
   placeholder: string,
   className: any
+}
+
+export interface IAdminComponent {
+  title: string,
+  children: ReactNode
 }

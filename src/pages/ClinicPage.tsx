@@ -1,27 +1,29 @@
-import { useTranslation } from 'react-i18next'
-import styles from "./Pages.module.css"
-import HeaderCovid from "../components/HeaderCovid/HeaderCovid"
-import Navbar from "../components/Navbar/Navbar"
-import ClinicBanner from "../components/Doctors_Clinics_Components/ClinicComponents/ClinicBanner"
-import Title from '../components/CommonComponent/ContentComponents/Title'
-import BackgroundTop from '../components/Doctors_Clinics_Components/BackgroundTop'
-import SearchComponent from '../components/CommonComponent/SearchComponent'
-import SelectClinic from '../components/Doctors_Clinics_Components/SelectClinic'
-import List from '../components/Doctors_Clinics_Components/List'
-import ClinicItem from '../components/Doctors_Clinics_Components/ClinicComponents/ClinicItem'
-import a from "../images/test/blood-drop.svg"
+import { useTranslation } from "react-i18next";
+import styles from "./Pages.module.css";
+import HeaderCovid from "../components/HeaderCovid/HeaderCovid";
+import Navbar from "../components/Navbar/Navbar";
+import ClinicBanner from "../components/Doctors_Clinics_Components/ClinicComponents/ClinicBanner";
+import Title from "../components/CommonComponent/ContentComponents/Title";
+import BackgroundTop from "../components/Doctors_Clinics_Components/BackgroundTop";
+import SearchComponent from "../components/CommonComponent/SearchComponent";
+import SelectClinic from "../components/Doctors_Clinics_Components/SelectClinic";
+import List from "../components/Doctors_Clinics_Components/List";
+import ClinicItem from "../components/Doctors_Clinics_Components/ClinicComponents/ClinicItem";
+import { useQuery } from "@tanstack/react-query";
+import { getAllSpecialties } from "../Services/specialty";
 
-const clinicData = [
-  { image: a, name: 'Nhi khoa' },
-  { image: a, name: 'Xương khớp' },
-  { image: a, name: 'Tim mạch' },
-  { image: a, name: 'Nhi khoa' },
-  { image: a, name: 'Xương khớp' },
-  { image: "", name: '' },
-]
+export interface SpecialtyData {
+  data?: any;
+}
 
-const ClinicPage = () => {
-  const { t } = useTranslation()
+const ClinicPage = ({ data }: SpecialtyData) => {
+  const { t } = useTranslation();
+
+  const specialty = useQuery({
+    queryKey: ["clinicList"],
+    queryFn: () => getAllSpecialties(data),
+  });
+
   return (
     <>
       <div style={{ backgroundColor: " #f2f3ff" }}>
@@ -36,12 +38,12 @@ const ClinicPage = () => {
               <SearchComponent placeholder={t("find.clinic.or.your.disease.symptoms")} className="" />
               <SelectClinic />
             </div>
-            <List data={clinicData} renderType="clinic" renderItem={(item) => <ClinicItem item={item} />} />
+            <List data={specialty?.data || []} renderType="clinic" renderItem={(item) => <ClinicItem item={item} />} />
           </div>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default ClinicPage
+export default ClinicPage;

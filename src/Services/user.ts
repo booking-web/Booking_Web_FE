@@ -14,7 +14,7 @@ export const login = async (data: ILogin) => {
 }
 
 export const register = async (data: IRegister) => {
-  const response = await httpClient.post("/api/v1/sign-up", data)
+  const response = await httpClient.post("/api/v1/register", data)
 
   return response.data
 }

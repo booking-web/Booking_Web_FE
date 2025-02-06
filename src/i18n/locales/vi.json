@@ -133,5 +133,20 @@
   "delete.account": "Xóa tài khoản",
   "update.info.user.successfully": "Cập nhật thông tin người dùng thành công !",
   "warning": "Cảnh báo !",
-  "do.you.want.to.delete.your.account": "Bạn có muốn xóa tài khoản của bạn không ?"
+  "do.you.want.to.delete.your.account": "Bạn có muốn xóa tài khoản của bạn không ?",
+  "manage": "Quản lý",
+  "statistical": "Thống kê (trong 1 tháng)",
+  "users": "Người dùng",
+  "top.rated.doctor": "Bác sĩ có đánh giá cao nhất",
+  "most.booked.doctor": "Bác sĩ được đặt nhiều nhất",
+  "create": "Tạo",
+  "doctor.account": "Tài khoản bác sĩ",
+  "specialty.information": "Thông tin chuyên khoa",
+  "doctor.summary": "Tóm tắt thông tin bác sĩ",
+  "img": "Hình ảnh",
+  "description": "Mô tả",
+  "training.institution": "Nơi đào tạo",
+  "create.successfully": "Tạo thành công !",
+  "user.already.exists": "Người dùng đã tồn tại",
+  "specialty": "Chuyên khoa"
 }

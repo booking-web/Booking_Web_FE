@@ -7,6 +7,13 @@
   white-space: pre-wrap;
 }
 
+.adminTitle {
+  font-family: AvenirNext-DemiBold, sans-serif !important;
+  font-size: 20px;
+  line-height: 53px;
+  white-space: pre-wrap;
+}
+
 /*Separator*/
 
 .separator {
